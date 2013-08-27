@@ -1,0 +1,10 @@
+.note (@color: #FCEE74; @color-gradient: #EFD31A; @degree: -3deg;) {
+	background: linear-gradient(135deg, @color 0%, @color 47%, @color-gradient 100%); /* W3C */
+	background: @color; /* Old browsers */
+	background: -ms-linear-gradient(-45deg,  @color 0%, @color 47%, @color-gradient 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color', endColorstr='@color-gradient', GradientType=1); /* IE6-9 */
+
+	transform: rotate(@degree);
+        -webkit-transform:rotate(@degree);
+        -ms-transform:rotate(@degree);
+}

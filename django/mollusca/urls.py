@@ -19,5 +19,4 @@ urlpatterns = patterns('',
     (r'^static/(?P<path>.*)$',  'django.views.static.serve', {'document_root': STATIC_ROOT}),
 
     (r'^$', home),
-    (r'^members/$', members),
 )

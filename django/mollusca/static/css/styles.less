@@ -1,3 +1,6 @@
+@import "lib.less";
+
+
 /* General */
 .home-container {
         position: fixed;
@@ -6,11 +9,11 @@
 
 .nav-container {
         background: #A77737;
-        z-index: 20;
 	box-shadow: 1px 1px 25px #222;
 }
 
 .content-container {
+        background: #A77737;
         position: relative;
         top: 409px;
         z-index: 20;
@@ -19,15 +22,14 @@
 /* Navbar */
 
 #navbarid {
+        width: 100%;
         margin: 0px;
         border: 0px;
         border-radius: 0px;
+        opacity: 0.9;
 }
 
 .flexiblenavbar {
-        position: fixed;
-        z-index: 10;
-        left: 0px;
         height: 50px;
         width: 100%;
 }
@@ -41,21 +43,20 @@
 	box-shadow: inset 1px 1px 25px #222;
 }
 
-#jb {
-	background: #fcee74; /* Old browsers */
-	background: -ms-linear-gradient(-45deg,  #fcee74 0%,#fcee74 47%,#efd31a 100%); /* IE10+ */
-	background: linear-gradient(135deg,  #fcee74 0%,#fcee74 47%,#efd31a 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcee74', endColorstr='#efd31a',GradientType=1 ); /* IE6-9 */
+#bulletin {
+        .note;
+        .shadow(#6B573C);
+
 	height: 275px;
 	margin-top: 10px;
 	border-radius: 2px;	
-	box-shadow: 3px 3px 1px #6B573C;
-	transform: rotate(-3deg);
-        -webkit-transform:rotate(-3deg);
-        -ms-transform:rotate(-3deg);
+
+        article {
+                margin: 32px;
+        }
 }
 
-#pin {
+.pin {
 	background: #cc0000; /* Old browsers */
 	background: -ms-radial-gradient(center, ellipse cover,  #cc0000 35%,#cc9090 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #cc0000 35%,#cc9090 100%); /* W3C */
@@ -67,12 +68,6 @@
 	width: 24px;
 	border-radius: 1000px;
 	box-shadow: 1px 1px 2px #222;
-
-
-}
-
-#jb-content {
-        margin: 32px;
 }
 
 .card {
@@ -82,11 +77,11 @@
 	margin-top: 3px;
 	margin-left: 3%;
 	border-radius: 8px;
-	box-shadow: 3px 3px 1px #444;
+        .shadow;
 }
 
-#tag-1 {
-	background-color: lightblue;
+.tag {
+        background-color: lightblue;
 	position: relative;
 	display: inline-block;
 	left: 5%;
@@ -95,41 +90,25 @@
 	margin-left: 3%;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
-	box-shadow: 3px 3px 1px #444;
-	z-index: 1;
+}
+
+
+#tag-1 {
+        .tag-shadow(@position: 1; @shadow-inset: 0px 0px 0px;); 
 }
 
 #tag-2 {
-	background-color: lightblue;
-	position: relative;
-	display: inline-block;
-	left: 5%;
-	height: 35px;
-	width: 27%;
-	margin-left: 3%;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
-	box-shadow: inset 0px 3px 1px #444,
-	                  3px 3px 1px #444;
+        .tag-shadow;
 }
 
 #tag-3 {
-	background-color: lightblue;
-	position: relative;
-	display: inline-block;
-	left: 5%;
-	height: 35px;
-	width: 27%;
-	margin-left: 3%;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
-	box-shadow: inset 0px 3px 1px #444,
-	                  3px 3px 1px #444;
+        .tag-shadow;
 }
 
 /* Members */
 #members {
         background: #A77737;
+        padding-top: 13px;
 }
 
 .avatar {
@@ -145,21 +124,20 @@
 }
 
 .description {
-        margin-top: 200px;
+        margin-top: 25%
 }
 
 /* Footer */
 footer {
-        background-color: ;
         height: 60px;
         width: 100%;
         padding-top: 23px;
         opacity: 0.75;
-}
 
-footer p {
-        margin-left: 20px;
-        font-family: "Open Sans", serif;
-        font-weight: bold;
-        font-size: 13px;
+        p {
+                margin-left: 20px;
+                font-family: "Open Sans", serif;
+                font-weight: bold;
+                font-size: 13px;
+        }
 }

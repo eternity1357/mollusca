@@ -1,26 +1,27 @@
 {% extends "base.html" %}
 
 {% block home %}
-<section class="jumbotron row" id="home" name="home">
-	<article class="col-sm-6 col-md-6 col-lg-6" id="jb" >
-		<div id="pin"></div>
-		<div id="jb-content">
+<div class="jumbotron row" id="home">
+	<section class="col-sm-6 col-md-6 col-lg-6" id="bulletin" >
+		<div class="pin"></div>
+		<article id="bulletin-content">
 	                <h1>Mollusca!</h1>
         	        <p class="lead">幹！我們提供你最好的網頁</p>
 			<p><a class="btn btn-primary btn-large">了解更多 &raquo;</a></p>
-		</div>
-	</article>
-	<article class="hidden-xs col-sm-6 col-md-6 col-lg-6">
-		<div class="card"></div>
-		<div id="tag-1"></div>
-		<div id="tag-2"></div>
-		<div id="tag-3"></div>
-	</article>
-</section>
+		</article>
+	</section>
+	<section class="hidden-xs col-sm-6 col-md-6 col-lg-6">
+		<article class="card"></article>
+                <div class="tag" id="tag-1"></div>
+                <div class="tag" id="tag-2"></div>
+                <div class="tag" id="tag-3"></div>
+	</section>
+</div>
 {% endblock %}
 
 {% block members %}
 <section class="jumbotron row" id="members" name="members">
+        <p class="page-header">Members</p>
         <!-- Members' image -->
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
                 <img class="img-circle avatar-img" src="/static/img/Macrohard.PNG" id="a1">
