@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <title>{% block title %}{% endblock %}</title>
+        <title>Mollusca the site constructor</title>
         <link rel="stylesheet" href="/static/css/style.css">
 
         <!-- Bootstrap -->
@@ -23,20 +23,40 @@
 </head>
 
 <body style="background-color:#a77737">
-        <div class="body-container">
-                {% block content %}
-                {% endblock %}
-        </div>
+        <div class="home-container">
 
+                {% block home %}
+                {% endblock %}
+
+        </div>
+        <div class="content-container">
+                <div class="nav-container">
+                        <nav class="navbar navbar-inverse flexiblenavbar" role="navigation" id="navbarid">
+                                <div class="navbar-header">
+                                        <a class="navbar-brand">Mollusca</a>
+                                </div>
+                                <div class="collapse navbar-collapse">
+                                        <ul class="nav navbar-nav navbarul" id="navbarid-ul">
+                                                <li><a href="#home">Home</a></li>
+                                                <li><a href="#members">Members</a></li>
+                                                <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                </div>
+                        </nav>
+                </div>
+
+                {% block members %}
+                {% endblock %}
 
         <footer>
-                <p><b>&copy; Mollusca 2013</b></p>
+                <p>&copy; Mollusca 2013</p>
         </footer>
+        </div>
+
 
         <!-- JS Extensions -->
         <script src="/static/js/bootstrap.min.js"></script>
         <!-- Custom JS -->
         <script src="/static/js/navbar.js"></script>
-
 </body>
 </html>
