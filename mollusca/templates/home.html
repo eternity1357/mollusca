@@ -21,10 +21,10 @@
 
 {% block members %}
 <section class="jumbotron row" id="members" name="members">
-        <p class="page-header">Members</p>
+        <h2 class="page-header">Members</h2>
         <!-- Members' image -->
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
-                <img class="img-circle avatar-img" src="/static/img/Macrohard.PNG" id="a1">
+                <img class="img-circle avatar-img" src="/static/img/mammoth.png" id="a1">
                 <h4 class="our-team">C.J. Hwong<span>Developer</span></h4>
         </div>
 
@@ -35,7 +35,7 @@
 
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
                 <img class="img-circle avatar-img" src="/static/img/Macrohard.PNG" id="a3">
-                <h4 class="our-team">Lambda<span>Developer</span></h4>
+                <h4 class="our-team">C. F. Yang<span>Developer</span></h4>
         </div>
 
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
@@ -63,10 +63,10 @@
         </article>
         <article class=" col-sm-12 colmd-12 col-lg-12 description" id="description_a3">
                 <blockquote>
-                        <h3>lambda</h3>
-                        <small style="margin-bottom:10px;"><em>Description</em></small>
+                        <h3>Backend Developer</h3>
+                        <small style="margin-bottom:10px;"><em>Masters in various OS and server side languages</em></small>
                         <p><i class="icon-envelope"></i><a href="mailto:sonic.tw.tp@gmail.com"> sonic.tw.tp@gmail.com</a></p>
-                        <p><i class="icon-phone"></i> phone number</p>
+                        <p><i class="icon-phone"></i> 0972-858-135</p>
                 </blockquote>
         </article>
         <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description_a4">
@@ -77,7 +77,6 @@
                         <p><i class="icon-twitter"></i><a href=""> personal pages</a></p>
                 </blockquote>
         </article>
-        <script>$('.description').hide(0);</script>
         <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description">
                 <blockquote>
                         <h2>認識我們</h2>
@@ -86,14 +85,4 @@
                 </blockquote>
         </article>
 </section>
-
-<script>
-        $(document).ready(function() {
-                $('.avatar-img').mouseover(function() {
-                        var currentId = $(this).attr('id');
-                        $('.description').hide(0);
-                        $('#description_'+currentId).show(0);
-                });
-        });
-</script>
 {% endblock %}
