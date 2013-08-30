@@ -1,5 +1,7 @@
 @import "lib.less";
-
+@bg-color-content: linear-gradient(135deg, #D0C474 0%, #C3A377 75%);
+@z-content: 5;
+@z-navbar: 10;
 
 /* General */
 .home-container {
@@ -8,15 +10,21 @@
 }
 
 .nav-container {
-        background: #A77737;
-	box-shadow: 1px 1px 25px #222;
+        position: relative;
+        background: rgba(0, 0, 0, 0) ;
+        height: 50px;
+        z-index: @z-navbar;
 }
 
 .content-container {
-        background: #A77737;
+        background: @bg-color-content;
         position: relative;
-        top: 409px;
-        z-index: 20;
+        top: 405px;
+        z-index: @z-content;
+}
+
+@media screen and (max-width: 767px) {
+        .content-container {top: 345px;}
 }
 
 /* Navbar */
@@ -26,7 +34,7 @@
         margin: 0px;
         border: 0px;
         border-radius: 0px;
-        opacity: 0.9;
+        box-shadow: 1px 1px 25px #222;
 }
 
 .flexiblenavbar {
@@ -38,6 +46,7 @@
 #home {
 	background-image: url("/static/img/Plywood.png");
 	background-size: repeat;
+        height: 405px;
         margin: 0px auto;
         border-radius: 0px;
 	box-shadow: inset 1px 1px 25px #222;
@@ -57,10 +66,10 @@
 }
 
 .pin {
-	background: #cc0000; /* Old browsers */
-	background: -ms-radial-gradient(center, ellipse cover,  #cc0000 35%,#cc9090 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #cc0000 35%,#cc9090 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc9090',GradientType=1 ); /* IE6-9 */
+	background: #f85032; /* Old browsers */
+	background: -ms-linear-gradient(-45deg, #f85032 0%,#ea5b48 50%,#f6290c 75%,#e73827 100%); /* IE10+ */
+	background: linear-gradient(135deg, #f85032 0%,#ea5b48 50%,#f6290c 75%,#e73827 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	position: relative;
 	top: 5px;
 	left: 50%;
@@ -71,7 +80,7 @@
 }
 
 .card {
-	background-color: lightblue;
+	.card-color(@Hue:208);
 	height: 255px;
 	width: 100%;
 	margin-top: 3px;
@@ -81,7 +90,6 @@
 }
 
 .tag {
-        background-color: lightblue;
 	position: relative;
 	display: inline-block;
 	left: 5%;
@@ -94,29 +102,41 @@
 
 
 #tag-1 {
+        background-color: #B3D0C3;
         .tag-shadow(@position: 1; @shadow-inset: 0px 0px 0px;); 
 }
 
 #tag-2 {
+        background-color: #7EF69F;
         .tag-shadow;
 }
 
 #tag-3 {
+        background-color: #C3A377;
         .tag-shadow;
 }
 
 /* Members */
 #members {
-        background: #A77737;
+        background: rgba(0, 0, 0, 0) ;
+        width: 100%;
         padding-top: 13px;
+
+        h2 {text-shadow: 1px 1px #C38D77;}
 }
 
 .avatar {
         text-align: center;
 }
 
-.our-team span{
-        color: #B4B4B4;
+.avatar-img {
+        max-width: 120px;
+        border: 3px dashed #F5F5F5;
+        box-shadow: 3px 3px 1px;
+}
+
+.our-team span {
+        color: #5E5E5E;
         display: block;
         font-size: 11px;
         line-height: 13px;
@@ -124,7 +144,24 @@
 }
 
 .description {
-        margin-top: 25%
+        background-color: rgba(245, 245, 245, 0.3);
+        padding: 30px;
+        margin-top: 200px;
+        border-radius: 3px;
+
+        blockquote small {
+                color: #5E5E5E;
+                opacity: 0.8;
+        }
+
+        blockquote a {
+                color: #333;
+        }
+
+}
+
+@media screen and (max-width: 767px) {
+        .description {margin-top: 50px;}
 }
 
 /* Footer */

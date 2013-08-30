@@ -45,7 +45,7 @@ $(document).ready(function() {
                 }
 
                 if (docked && $window.scrollTop() <= homeHeight) {
-                        $("#navbarid").css({"position": "static", "opacity": "1"})
+                        $("#navbarid").css({"position": "relative", "opacity": "1"})
                         docked = false
                         maximizeNavbar()
                 }
