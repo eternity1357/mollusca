@@ -1,0 +1,47 @@
+@import "home.less";
+@import "navbar.less";
+@import "members.less";
+
+@z-content: 5;
+@z-navbar: 10;
+@bg-color-content: linear-gradient(135deg, #C3A377 0%, #D0C474 90%);
+
+/* General */
+.home-container {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-container {
+    position: relative;
+    background: rgba(0, 0, 0, 0) ;
+    height: 50px;
+    z-index: @z-navbar;
+}
+
+.content-container {
+    background: @bg-color-content;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D0C474', endColorstr='#C3A377',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    position: relative;
+    top: 405px;
+    z-index: @z-content;
+}
+
+@media screen and (max-width: 767px) {
+    .content-container {top: 345px;}
+}
+
+/* Footer */
+footer {
+    height: 60px;
+    width: 100%;
+    padding-top: 23px;
+    opacity: 0.75;
+
+    p {
+        margin-left: 20px;
+        font-family: "Open Sans", serif;
+        font-weight: bold;
+        font-size: 13px;
+    }
+}

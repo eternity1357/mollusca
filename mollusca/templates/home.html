@@ -5,84 +5,86 @@
 	<section class="col-sm-6 col-md-6 col-lg-6" id="bulletin" >
 		<div class="pin"></div>
 		<article id="bulletin-content">
-	                <h1>Mollusca!</h1>
-        	        <p class="lead">幹！我們提供你最好的網頁</p>
-			<p><a class="btn btn-primary btn-large">了解更多 &raquo;</a></p>
+	        <h1>Mollusca!</h1>
+    	    <p class="lead">我們提供你最好的網頁</p>
+			<p><a class="btn btn-primary btn-lg" data-toggle="modal" href="/contact">聯絡我們 &raquo;</a></p>
 		</article>
-	</section>
+    </section>
+
+
 	<section class="hidden-xs col-sm-6 col-md-6 col-lg-6">
-		<article class="card"></article>
-                <div class="tag" id="tag-1"></div>
-                <div class="tag" id="tag-2"></div>
-                <div class="tag" id="tag-3"></div>
+		<article class="card-1" id="card-content"></article>
+        <div class="tag" id="tag-1"></div>
+        <div class="tag" id="tag-2"></div>
+        <div class="tag" id="tag-3"></div>
 	</section>
 </div>
 {% endblock %}
 
 {% block members %}
 <section class="jumbotron row" id="members" name="members">
-        <h2 class="page-header">Members</h2>
-        <!-- Members' image -->
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
-                <img class="img-circle avatar-img" src="/static/img/mammoth.png" id="a1">
-                <h4 class="our-team">C.J. Hwong<span>Developer</span></h4>
-        </div>
+    <h2 class="page-header">Members</h2>
+    <!-- Members' image -->
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
+        <img class="img-circle avatar-img" src="/static/img/mammoth.png" id="a1">
+        <h4 class="our-team">C.J. Hwong<span>Developer</span></h4>
+    </div>
 
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
-                <img class="img-circle avatar-img" src="/static/img/Macrohard.PNG" id="a2">
-                <h4 class="our-team">Toyota<span>Developer</span></h4>
-        </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
+        <img class="img-circle avatar-img" src="/static/img/toyo.png" id="a2">
+        <h4 class="our-team">toyo<span>Developer</span></h4>
+    </div>
 
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
-                <img class="img-circle avatar-img" src="/static/img/Macrohard.PNG" id="a3">
-                <h4 class="our-team">C. F. Yang<span>Developer</span></h4>
-        </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
+        <img class="img-circle avatar-img" src="/static/img/CFY.jpg" id="a3">
+        <h4 class="our-team">C. F. Yang<span>Developer</span></h4>
+    </div>
 
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
-                <img class="img-circle avatar-img" src="/static/img/Macrohard.PNG" id="a4">
-                <h4 class="our-team">KSY<span>Designer</span></h4>
-        </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 avatar">
+        <img class="img-circle avatar-img" src="/static/img/daisuke.png" id="a4">
+        <h4 class="our-team">大助<span>Designer</span></h4>
+    </div>
 
-        <!-- Members' description -->
-        <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description_a1">
-                <blockquote>
-                        <h3>Backend Developer</h3>
-                        <small style="margin-bottom:10px;"><em>A Python wrapped around Penguins</em></small>
-                        <p><i class="icon-envelope"></i><a href="mailto:CJHwong@gmail.com"> CJHwong@gmail.com</a></p>
-                        <p><i class="icon-twitter"></i><a href="//twitter.com/CJHwong"> CJHwong</a></p>
-                </blockquote>
+    <!-- Members' description -->
+    <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description_a1">
+        <blockquote>
+            <h3>後端開發</h3>
+            <small style="margin-bottom:10px;"><em>A Python wrapped around Penguins</em></small>
+            <p><i class="icon-envelope"></i><a href="mailto:CJHwong@gmail.com"> CJHwong@gmail.com</a></p>
+            <p><i class="icon-twitter-sign"></i><a href="//twitter.com/CJHwong"> CJHwong</a></p>
+        </blockquote>
 
-        </article>
-        <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description_a2">
-                <blockquote>
-                        <h3>toyota</h3>
-                        <small style="margin-bottom:10px;"><em>Description</em></small>
-                        <p><i class="icon-envelope"></i><a href="mailto:eternity1357@gmail.com"> eternity1357@gmail.com</a></p>
-                        <p><i class="icon-phone"></i> 0939-741-977</p>
-                </blockquote>
-        </article>
-        <article class=" col-sm-12 colmd-12 col-lg-12 description" id="description_a3">
-                <blockquote>
-                        <h3>Backend Developer</h3>
-                        <small style="margin-bottom:10px;"><em>Masters in various OS and server side languages</em></small>
-                        <p><i class="icon-envelope"></i><a href="mailto:sonic.tw.tp@gmail.com"> sonic.tw.tp@gmail.com</a></p>
-                        <p><i class="icon-phone"></i> 0972-858-135</p>
-                </blockquote>
-        </article>
-        <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description_a4">
-                <blockquote>
-                        <h3>ksy</h3>
-                        <small style="margin-bottom:10px;"><em>Description</em></small>
-                        <p><i class="icon-envelope"></i><a href="mailto:"> mail address</a></p>
-                        <p><i class="icon-twitter"></i><a href=""> personal pages</a></p>
-                </blockquote>
-        </article>
-        <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description">
-                <blockquote>
-                        <h2>認識我們</h2>
-                        <p>精通 Django 等多種後端技術。</p>
-                        <p>熟悉最先進的網頁前端開發技術，在客戶眼中，你的網頁設計永遠在時代潮流的頂端</p>
-                </blockquote>
-        </article>
+    </article>
+    <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description_a2">
+        <blockquote>
+            <h3>前端開發</h3>
+            <small style="margin-bottom:10px;"><em>Description</em></small>
+            <p><i class="icon-envelope"></i><a href="mailto:eternity1357@gmail.com"> eternity1357@gmail.com</a></p>
+            <p><i class="icon-phone"></i> 0939-741-977</p>
+        </blockquote>
+    </article>
+    <article class=" col-sm-12 colmd-12 col-lg-12 description" id="description_a3">
+        <blockquote>
+            <h3>後端開發</h3>
+            <small style="margin-bottom:10px;"><em>Masters in various OS and server side languages</em></small>
+            <p><i class="icon-envelope"></i><a href="mailto:sonic.tw.tp@gmail.com"> sonic.tw.tp@gmail.com</a></p>
+            <p><i class="icon-phone"></i> 0972-858-135</p>
+        </blockquote>
+    </article>
+    <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description_a4">
+        <blockquote>
+            <h3>美術設計</h3>
+            <small style="margin-bottom:10px;"><em>Description</em></small>
+            <p><i class="icon-envelope"></i><a href="mailto:"> mail address</a></p>
+            <p><i class="icon-twitter-sign"></i><a href=""> personal pages</a></p>
+        </blockquote>
+    </article>
+    <article class=" col-sm-12 col-md-12 col-lg-12 description" id="description">
+        <blockquote>
+            <h2>認識我們</h2>
+            <p>精通 Django 等多種後端技術。</p>
+            <p>熟悉最先進的網頁前端開發技術，在客戶眼中，你的網頁設計永遠在時代潮流的頂端</p>
+        </blockquote>
+    </article>
 </section>
 {% endblock %}

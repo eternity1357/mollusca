@@ -1,0 +1,23 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">聯絡我們</h4>
+            <small>你可以填寫這份表單，讓我們更了解你對網站的需求，或者直接以電話和 Email 聯絡我們。</small>
+        </div>
+        <div class="modal-body">
+            <form id="contact-form" role="form" action="contact" method="post">{% csrf_token %}
+                {% for field in form %}
+                <div class="form-group">
+                    <label>{{ field.label }}</label>
+                    {{ field }}
+                </div>
+                {% endfor %}
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
+                    <input type="submit" class="btn btn-success" form="contact-form" value="傳送">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

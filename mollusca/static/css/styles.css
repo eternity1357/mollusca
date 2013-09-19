@@ -1,0 +1,271 @@
+/* Home */
+#home {
+  background-image: url("/static/img/Plywood.png");
+  background-size: repeat;
+  height: 405px;
+  margin: 0px auto;
+  border-radius: 0px;
+  box-shadow: inset 1px 1px 25px #222;
+}
+#bulletin {
+  background: #F1E767;
+  /* Old browsers */
+
+  background: linear-gradient(135deg, #f1e767 0%, #feb645 100%);
+  /* W3C */
+
+  background: -ms-linear-gradient(-45deg, #f1e767 0%, #feb645 100%);
+  /* IE10+ */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1E767', endColorstr='#FEB645', GradientType=1);
+  /* IE6-9 */
+
+  height: 275px;
+  margin-top: 10px;
+  border-radius: 2px;
+  box-shadow: 3px 3px 1px #6B573C;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transition: 1s;
+}
+#bulletin:hover {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transition: 1s;
+}
+#bulletin article {
+  margin: 32px;
+}
+#bulletin-content h1 {
+  text-shadow: 1px 1px 3px;
+  font-family: 'Unkempt', cursive;
+}
+.pin {
+  background: #F85032;
+  /* Old browsers */
+
+  background: -ms-linear-gradient(-45deg, #f85032 0%, #ea5b48 50%, #f6290c 75%, #e73827 100%);
+  /* IE10+ */
+
+  background: linear-gradient(135deg, #f85032 0%, #ea5b48 50%, #f6290c 75%, #e73827 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F85032', endColorstr='#E73827', GradientType=1);
+  /* IE6-9 */
+
+  position: relative;
+  top: 5px;
+  left: 50%;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px #222;
+}
+.card-1 {
+  background: -ms-radial-gradient(center, ellipse cover, #8ac8ff 0%, #64b5fc 75%);
+  /* IE10+ */
+
+  background: radial-gradient(ellipse at center, #8ac8ff 0%, #64b5fc 75%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c8ff', endColorstr='#66b6fc', GradientType=1);
+  /* IE6-9 */
+
+  height: 255px;
+  width: 100%;
+  margin-top: 3px;
+  margin-left: 3%;
+  padding: 32px;
+  border-top: 5px solid;
+  border-radius: 5px;
+  box-shadow: 3px 3px 1px, 0px 0px 20px;
+}
+.card-2 {
+  background: -ms-radial-gradient(center, ellipse cover, #8affbb 0%, #64fca3 75%);
+  /* IE10+ */
+
+  background: radial-gradient(ellipse at center, #8affbb 0%, #64fca3 75%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c8ff', endColorstr='#66b6fc', GradientType=1);
+  /* IE6-9 */
+
+  height: 255px;
+  width: 100%;
+  margin-top: 3px;
+  margin-left: 3%;
+  padding: 32px;
+  border-top: 5px solid;
+  border-radius: 5px;
+  box-shadow: 3px 3px 1px, 0px 0px 20px;
+}
+.card-3 {
+  background: -ms-radial-gradient(center, ellipse cover, #ffce8a 0%, #fcbd64 75%);
+  /* IE10+ */
+
+  background: radial-gradient(ellipse at center, #ffce8a 0%, #fcbd64 75%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c8ff', endColorstr='#66b6fc', GradientType=1);
+  /* IE6-9 */
+
+  height: 255px;
+  width: 100%;
+  margin-top: 3px;
+  margin-left: 3%;
+  padding: 32px;
+  border-top: 5px solid;
+  border-radius: 5px;
+  box-shadow: 3px 3px 1px, 0px 0px 20px;
+}
+#card-content p {
+  line-height: 40px;
+}
+#card-content p:first-letter {
+  font-size: 48px;
+  text-shadow: 1px 1px 3px;
+}
+#tag-1 {
+  position: relative;
+  display: inline-block;
+  left: 5%;
+  height: 35px;
+  width: 27%;
+  margin-left: 3%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  z-index: 1;
+  box-shadow: 3px 3px 1px, 0px 0px 0px;
+  background-color: #64b5fc;
+}
+#tag-2 {
+  position: relative;
+  display: inline-block;
+  left: 5%;
+  height: 35px;
+  width: 27%;
+  margin-left: 3%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  z-index: 0;
+  box-shadow: 3px 3px 1px, inset 0px 3px 1px #444444;
+  background-color: #64fca3;
+}
+#tag-3 {
+  position: relative;
+  display: inline-block;
+  left: 5%;
+  height: 35px;
+  width: 27%;
+  margin-left: 3%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  z-index: 0;
+  box-shadow: 3px 3px 1px, inset 0px 3px 1px #444444;
+  background-color: #fcbd64;
+}
+/* Navbar */
+#navbarid {
+  width: 100%;
+  margin: 0px;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: 1px 1px 25px #222;
+}
+.flexiblenavbar {
+  height: 50px;
+  width: 100%;
+}
+/* Members */
+#members {
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  padding-top: 13px;
+}
+#members h2 {
+  text-shadow: 1px 1px #C38D77;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.avatar {
+  text-align: center;
+}
+.avatar-img {
+  max-width: 120px;
+  border: 3px dashed #F5F5F5;
+  box-shadow: 3px 3px 1px;
+  transition: all 1s;
+}
+.avatar-img:hover {
+  max-width: 130px;
+  transition: all 1s;
+}
+.our-team span {
+  color: #5E5E5E;
+  display: block;
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 0px;
+}
+.description {
+  background-color: rgba(245, 245, 245, 0.3);
+  padding: 30px;
+  margin-top: 200px;
+  border-radius: 3px;
+}
+.description h3 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+.description blockquote small {
+  color: #5E5E5E;
+  font-family: 'Cinzel', serif;
+  opacity: 0.8;
+}
+.description blockquote a {
+  color: #333;
+  font-family: 'Cinzel', serif;
+}
+@media screen and (max-width: 767px) {
+  .description {
+    margin-top: 50px;
+  }
+}
+/* General */
+.home-container {
+  position: fixed;
+  width: 100%;
+}
+.nav-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  height: 50px;
+  z-index: 10;
+}
+.content-container {
+  background: linear-gradient(135deg, #c3a377 0%, #d0c474 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D0C474', endColorstr='#C3A377', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  position: relative;
+  top: 405px;
+  z-index: 5;
+}
+@media screen and (max-width: 767px) {
+  .content-container {
+    top: 345px;
+  }
+}
+/* Footer */
+footer {
+  height: 60px;
+  width: 100%;
+  padding-top: 23px;
+  opacity: 0.75;
+}
+footer p {
+  margin-left: 20px;
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+  font-size: 13px;
+}

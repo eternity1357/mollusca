@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                background: url(static/img/ie_fallback/betterBrowsers.png) no-repeat center center fixed;
+                background-size: cover;
+            }
+            #betterBrowser {
+                background: #EEE;
+                position: absolute;
+                height: 300px;
+                width: 550px;
+                left: 24%;
+                top: 15%;
+                padding: 30px;
+                border: #555 solid;
+            }
+            #betterBrowser p {
+                bottom: 0px;
+                font-weight: bold;
+                text-align: center;
+            }
+            #links {
+                height: 200px;
+                width: 100%;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            .chrome, .firefox {
+                background: url(static/img/ie_fallback/icon_browsers.png) no-repeat;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+            }
+            .chrome {
+                background-position: left top;
+            }
+            .firefox {
+                background-position: -200px top;
+                right: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="betterBrowser">
+            <div id="links">
+                <a class="chrome" href="//www.google.com/chrome"></a>
+                <a class="firefox" href="//www.mozilla.org"></a>
+            </div>
+            <p>請升級你的瀏覽器，或更新 Internet Explorer。</p>
+            <p>Please download a modern browser or upgrade your Internet Explorer</p>
+        </div>
+    </body>
+</html>
